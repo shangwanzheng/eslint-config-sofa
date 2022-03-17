@@ -1,29 +1,3 @@
-/**
- * AlloyTeam ESLint 规则
- * https://alloyteam.github.io/eslint-config-alloy/
- *
- * 贡献者：
- *   xcatliu <xcatliu@gmail.com>
- *   heyli <lcxfs1991@gmail.com>
- *   Swan <noreply@github.com>
- *   DiamondYuan <admin@diamondyuan.com>
- *   Dash Chen <noreply@github.com>
- *   lzw <mingxin2014@gmail.com>
- *   ryoliu <sfesh@163.com>
- *   sunhui04 <sunhui04@meituan.com>
- *
- * 依赖版本：
- *   eslint ^7.32.0
- *   @babel/eslint-parser ^7.17.0
- *   @babel/preset-react ^7.16.7
- *   eslint-plugin-react ^7.28.0
- *   vue-eslint-parser ^8.2.0
- *   eslint-plugin-vue ^8.4.1
- *   @typescript-eslint/parser ^5.12.0
- *   @typescript-eslint/eslint-plugin ^5.12.0
- *
- * 此文件是由脚本 scripts/build.ts 自动生成
- */
 module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
