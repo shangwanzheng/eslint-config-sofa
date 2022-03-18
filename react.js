@@ -4,7 +4,10 @@ module.exports = {
       presets: ['@babel/preset-react'],
     },
   },
-  plugins: ['react'],
+  globals: {
+    module: 'readonly',
+  },
+  plugins: ['react', 'react-hooks', 'jsx-a11y'],
   rules: {
     /**
      * 布尔值类型的 propTypes 的 name 必须为 is 或 has 开头

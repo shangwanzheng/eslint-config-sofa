@@ -2,6 +2,11 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   rules: {
+    /**
+     * 禁止使用未定义的变量
+     * @reason 通过ts检测，需要开启`strictNullChecks`
+     */
+    'no-undef': 'off',
     'react/sort-comp': 'off',
 
     /**
