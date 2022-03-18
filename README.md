@@ -37,7 +37,7 @@ module.exports = {
 ### React
 
 ```bash
-npm install --save-dev eslint @babel/eslint-parser @babel/preset-react@latest eslint-plugin-react eslint-config-sofa
+npm install --save-dev eslint @babel/eslint-parser @babel/preset-react@latest eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y  eslint-config-sofa
 ```
 
 在你的项目的根目录下创建一个 `.eslintrc.js` 文件，并将以下内容复制进去：
@@ -106,7 +106,7 @@ module.exports = {
 ### TypeScript React
 
 ```bash
-npm install --save-dev eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-config-sofa
+npm install --save-dev eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react     eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-config-sofa
 ```
 
 在你的项目的根目录下创建一个 `.eslintrc.js` 文件，并将以下内容复制进去：
