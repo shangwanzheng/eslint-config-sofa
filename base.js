@@ -267,6 +267,10 @@ module.exports = {
      */
     'no-const-assign': 'error',
     /**
+     * 禁止出现不影响值的表达式
+     */
+    'no-constant-binary-expression': 'error',
+    /**
      * 禁止将常量作为分支条件判断中的测试表达式，但允许作为循环条件判断中的测试表达式
      */
     'no-constant-condition': [
@@ -397,7 +401,7 @@ module.exports = {
      */
     'no-global-assign': 'error',
     /**
-     * 禁止使用 ~+ 等难以理解的类型转换，仅允许使用 !! +
+     * 禁止使用 ~+ 等难以理解的类型转换，仅允许使用 !!
      */
     'no-implicit-coercion': [
       'error',
@@ -719,6 +723,10 @@ module.exports = {
      */
     'no-unused-labels': 'off',
     /**
+     * 禁止类出现未使用的私有成员
+     */
+    'no-unused-private-class-members': 'error',
+    /**
      * 已定义的变量必须使用
      */
     'no-unused-vars': [
@@ -839,6 +847,10 @@ module.exports = {
      * 必须使用 0b11111011 而不是 parseInt()
      */
     'prefer-numeric-literals': 'off',
+    /**
+     * 使用 Object.hasOwn() 而不是 Object.prototype.hasOwnProperty.call()
+     */
+    'prefer-object-has-own': 'error',
     /**
      * 必须使用 ... 而不是 Object.assign，除非 Object.assign 的第一个参数是一个变量
      */

@@ -1,3 +1,17 @@
+
+/**
+ * 依赖版本：
+ *   eslint ^8.18.0
+ *   @babel/eslint-parser ^7.18.2
+ *   @babel/preset-react ^7.17.12
+ *   eslint-plugin-react ^7.30.1
+ *   eslint-plugin-jsx-a11y ^6.6
+ *   eslint-plugin-react-hooks ^4.6
+ *   vue-eslint-parser ^9.0.3
+ *   eslint-plugin-vue ^9.1.1
+ *   @typescript-eslint/parser ^5.29.0
+ *   @typescript-eslint/eslint-plugin ^5.29.0
+*/
 module.exports = {
   parserOptions: {
     babelOptions: {
@@ -8,6 +22,10 @@ module.exports = {
     module: 'readonly',
   },
   plugins: ['react', 'react-hooks', 'jsx-a11y'],
+  extends: [
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+  ],
   rules: {
     /**
      * 布尔值类型的 propTypes 的 name 必须为 is 或 has 开头
@@ -60,6 +78,14 @@ module.exports = {
      */
     'react/function-component-definition': 'off',
     /**
+     * hook 的返回值必须与 useState 的解构对应
+     */
+    'react/hook-use-state': 'off',
+    /**
+     * iframe 组件必须添加 sandbox 属性
+     */
+    'react/iframe-missing-sandbox': 'error',
+    /**
      * 布尔值的属性必须显式的声明值为 true
      */
     'react/jsx-boolean-value': 'off',
@@ -109,6 +135,10 @@ module.exports = {
      * 禁止出现重复的 props
      */
     'react/jsx-no-duplicate-props': 'error',
+    /**
+     * 使用 && 渲染组件时，禁止条件是 0 '' 或 NaN
+     */
+    'react/jsx-no-leaked-render': 'error',
     /**
      * 禁止在 jsx 中出现字符串
      */
