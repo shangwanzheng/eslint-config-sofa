@@ -1,5 +1,6 @@
 module.exports = {
   parser: '@babel/eslint-parser',
+  plugins: ['import'],
   parserOptions: {
     ecmaVersion: 2019,
     // ECMAScript modules 模式
@@ -330,7 +331,8 @@ module.exports = {
     /**
      * 禁止重复导入模块
      */
-    'no-duplicate-imports': 'error',
+    'no-duplicate-imports': 'off',
+    'import/no-duplicates': 'error',
     /**
      * 禁止在 else 内使用 return，必须改为提前结束
      * @reason else 中使用 return 可以使代码结构更清晰
