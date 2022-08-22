@@ -1,0 +1,1 @@
+npm publish --tag latest --registry https://registry.npmjs.org/
